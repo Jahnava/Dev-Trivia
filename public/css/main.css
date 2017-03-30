@@ -1,0 +1,104 @@
+/*page background*/
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+
+/*bottom box wrap*/
+.wrapper {
+  width: 430px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 0px;
+
+}
+
+/*floating quiz box*/
+#quiz {
+  background-color: grey;
+  padding-bottom: 60px;
+  width: 100%;
+  border-radius: 2%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* title */
+#quiz > h1 {
+  background-color: silver;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*question background*/
+.questions {
+  background-color: silver;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 20px;
+}
+
+/* Answer buttons*/
+.answers div {
+  color: blue;
+  padding: 10px 0 0 0;
+  background-color: lightgrey;
+  font-size: 16px;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-top: 1px solid grey;
+}
+
+/*mouse hover over answers*/
+.answers div:hover {
+  cursor: pointer;
+  color: #FBCB43;
+  background-color: purple;
+}
+
+/*background behind answer buttons*/
+.answers {
+  padding: 0px 0 10px 0px;
+}
+
+/*first answer button*/
+.answers div:first-child {
+  border: none;
+}
+
+/*answer checker box*/
+.checker {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+  background-color: white;
+
+}
+
+/*true answers*/
+.correct, .false {
+  background-color: #109D59;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 4px;
+  float: left;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+/*false answers*/
+.false {
+  background-color: #DC4437;
+}
