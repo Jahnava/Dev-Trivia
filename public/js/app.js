@@ -12,11 +12,21 @@ window.onload = function () {
 
         'Which answer includes ONLY git commands?' : ['git commit -m, git status, git pull, git push', 'get clone, git init, git er done, git branch' , 'git branches, glit ter, git add, git rm','gitty, git diff, git merge, git checkout', 0],
 
-      };
+        'What is the purpose of express in NodeJS projects?' : ['Defines a routing trampoline which is used to perform different acrobatics based on HTTP Method and URL', 'Dynamically renders computers into purgatory','Provides a robust set of features to develop web and mobile applications', 'Allows to set up middle-monkeys to respond to HTTP Requests', 2],
 
+        'What answer includes ONLY npm commands?' : ['config, impeach, whoami, help', 'start, reppin, cache, bae','pick, pack, prune, pumpernickel','init, npm, install, ls', 3],
+
+        'What does npm init accomplish?' : ['Initializes the Node Package Manager', 'Cracks down on negligence, passimism, and moping',' Navigates, performs, and manages','Sets up a Northern People March', 0],
+
+        'What does git init accomplish?' : ['Initializes the Node Package Manager', 'Creates an new Git repository','Creates an AngularJS project folder','Sets of a grid', 1],
+
+        'What is needed at the top of a HTML5 document?' : ['iife', 'script','<!DOCTYPE html>','$jQuery', 2],
+
+        'What is the difference between ul and ol html tags?' : ['ul underlines and ol creates an overlay', 'ul unorderded list and ol ordered list','ul unlisted and ol overly-listed','ul used-listing and ol on-point list', 1],
+
+      };
   function loadQuestion(curr) {
-  // This function loads all the question into the questionArea
-  // It grabs the current question based on the 'current'-variable
+  // This function loads all the question into the questionArea based on "current" variable.
 
     var question = Object.keys(allQuestions)[curr];
 
@@ -25,9 +35,7 @@ window.onload = function () {
   }
 
   function loadAnswers(curr) {
-  // This function loads all the possible answers of the given question
-  // It grabs the needed answer-array with the help of the current-variable
-  // Every answer is added with an 'onclick'-function
+  //loads answers of the given question, grabs the needed answer-array with the help of the current-variable, adds answers 'onclick'
 
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
 
@@ -46,10 +54,7 @@ window.onload = function () {
   }
 
   function checkAnswer(i, arr) {
-    // This is the function that will run, when clicked on one of the answers
-    // Check if givenAnswer is sams as the correct one
-    // After this, check if it's the last question:
-    // If it is: empty the answerArea and let them know it's done.
+    // checks answers for true or false and loads completed questions. Also, created done message when done.
 
     return function () {
       var givenAnswer = i,
@@ -75,8 +80,7 @@ window.onload = function () {
   }
 
   function addChecker(bool) {
-  // This function adds a div element to the page
-  // Used to see if it was correct or false
+  // adds a div to check for correct or false
 
     var createDiv = document.createElement('div'),
         txt       = document.createTextNode(current + 1);
@@ -94,7 +98,7 @@ window.onload = function () {
   }
 
 
-  // Start the quiz right away
+  // loads quiz on pg first
   loadQuestion(current);
   loadAnswers(current);
 
