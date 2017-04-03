@@ -26,7 +26,7 @@ window.onload = function () {
 
       };
   function loadQuestion(curr) {
-  // This function loads all the question into the questionArea based on "current" variable.
+  // loads all the question into the questionArea based on "current" variable.
 
     var question = Object.keys(allQuestions)[curr];
 
@@ -103,3 +103,13 @@ window.onload = function () {
   loadAnswers(current);
 
 };
+
+/* navbar-Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
