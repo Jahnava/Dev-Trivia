@@ -1,13 +1,22 @@
-body,
 html {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-image:url('/images/coding.jpg');
+}
+
+.topView {
     width: 100%;
     height: 100%;
     background-color: black;
+    font-weight: 700;
+    border: silver;
+
+
 }
 
 /*nav bar*/
 .topnav {
-    background-color: #333;
+  background-image: url('/images/coding.jpg');
+  background-repeat: no-repeat cover;
     overflow: hidden;
 }
 
@@ -19,7 +28,7 @@ html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
 }
 
 /* Change the color of links on hover */
@@ -28,12 +37,12 @@ html {
     color: black;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/* Hide the link that should open and close the topnav on small screens*/
 .topnav .icon {
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide- hide all links*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -42,7 +51,7 @@ html {
   }
 }
 
-/*  makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/*  small screens display the links vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -57,91 +66,121 @@ html {
   }
 }
 
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
 .intro-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     color: #f8f8f8;
-    background: url('./images/code.jpg') no-repeat center center;
-    background-size: cover;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.intro-message > h1 {
+/* Learning portal title*/
+ .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
     }
+}
 
-    .intro-message > h1 {
-        font-size: 3em;
-    }
+/*links*/
+#links {
+  font-family: sans-serif;
+}
 
+ul {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
 
+li {
+  width: 32%;
+  padding: 1rem;
+  box-sizing: border-box;
 
+}
 
-/*quote generator*/
-h2{
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li,
+a,
+a:after,
+a:before {
+  transition: .3s ease;
   color:white;
-  font-family:'Josefin Sans',sans-serif;
+  font-size: 100%;
 }
-.container{
-  background-color:rgba(52,52,52,.5);
-  margin-left:25%;
-  width:50%;
-  border-radius:10px;
-}
-.quote{
-  color:white;
-  font-size:20px;
-  font-family:'Josefin Sans',sans-serif;
-}
-button{
-  font-family:'Josefin Sans',sans-serif;
-  font-size:15px;
-  color:#fff;
-  margin-left:70%;
-  position:relative;
-  background-color:gray;
-  border:none;
-  border-radius:5px;
-  float:left;
-  margin-bottom:2%;
-  margin-top:1%;
-  outline:none;
- &:hover {
-        opacity:0.9;
-      }
-}
+
+#photo-zoom
+  li {
+    background-color: black;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+  }
+  a {
+    padding: 70% 10% 25% 10%;
+  }
+
+#photo-flip
+  li{
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+
+  }
+
+  a {
+    padding: 10% 10% 85% 10%;
+    text-shadow: 0 0 5px #000, 0 0 20px #000;
+  }
+
+  li:nth-child(1) a {
+    background: url('https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg') no-repeat 50% 0/cover transparent;
+    filter: grayscale(100%);
+  }
+  li:nth-child(2) a {
+    background: url('https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg') no-repeat 50% 0/cover transparent;
+    filter: grayscale(100%);
+  }
+  li:nth-child(3) a {
+    background: url('https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg') no-repeat 50% 0/cover transparent;
+    filter: grayscale(100%);
+  }
+  li:nth-child(1) a:hover {
+    background: url('http://lorempixel.com/400/200/business/') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+  li:nth-child(2) a:hover {
+    background: url('http://lorempixel.com/400/200/technics/') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+  li:nth-child(3) a:hover {
+    background: url('http://lorempixel.com/400/200/business/') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+
+  li {
+    background-color: black;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+  }
+
+  a {
+    padding: 42.5% 0;
+  }
+  li {
+    transform: rotate(0);
+  }
+  li:hover {
+    transform: rotate(-5deg);
+  }
