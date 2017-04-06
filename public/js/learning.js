@@ -17,8 +17,18 @@ function newQuote(){
  var randomNumber = Math.floor(Math.random()*(quote.length));
  document.getElementById('quoteDisplay').innerHTML='<br><h4>'+ quote[randomNumber] + '<br></h4>';
 }
-// 
+//
 // function randomImage(){
 //   var myURL = 'http://lorempixel.com/400/200/business/';
 //   return myURL;
 // }
+
+/* navbar-Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
