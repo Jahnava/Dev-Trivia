@@ -1,18 +1,19 @@
 html, body {
-  margin: 0; padding: 0;
+  margin: 0;
+  background-color: black;
 }
-.hero-bkg-animated {
+
+.animatedBackground {
   background: gray url(http://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  height: 100px;
   width: 100%;
   margin: 0;
   text-align: center;
-  height: 300px;
-  padding-top: 120px;
-  box-sizing: border-box;
   -webkit-animation: slide 20s linear infinite;
+
 }
 
-.hero-bkg-animated h1 {
+.animatedBackground h1 {
   font-family: sans-serif;
 }
 

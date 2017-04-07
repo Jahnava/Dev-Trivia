@@ -1,3 +1,15 @@
+ // google custom searchBar
+ (function() {
+   var cx = '016517091579891659157:3qyk0gpjfj8';
+   var gcse = document.createElement('script');
+   gcse.type = 'text/javascript';
+   gcse.async = true;
+   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+   var s = document.getElementsByTagName('script')[0];
+   s.parentNode.insertBefore(gcse, s);
+ })();
+
+
 var quote=[
   'Make it simple. Make it memorable. Make it inviting to look at. Make it fun to read.   ——Leo Burnett',
 
@@ -17,13 +29,9 @@ function newQuote(){
  var randomNumber = Math.floor(Math.random()*(quote.length));
  document.getElementById('quoteDisplay').innerHTML='<br><h4>'+ quote[randomNumber] + '<br></h4>';
 }
-//
-// function randomImage(){
-//   var myURL = 'http://lorempixel.com/400/200/business/';
-//   return myURL;
-// }
 
-/* navbar-Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+/* navbar-Toggle */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

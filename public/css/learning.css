@@ -1,15 +1,19 @@
 html {
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-image:url('/images/coding.jpg');
+  margin: 0 auto;
 }
 
 .topView {
-    width: 100%;
+    width: 75%;
     height: 100%;
     background-color: black;
-    font-weight: 700;
-    border: silver;
-
+    align: center;
+    display: center;
+    margin: auto;
+    border-style:double;
+    border-color: grey;
+    border-width: medium;
 
 }
 
@@ -183,4 +187,17 @@ a:before {
   }
   li:hover {
     transform: rotate(-5deg);
+  }
+
+  #searchBar {
+    width: 50%;
+    margin:auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #quoteDisplay {
+
   }

@@ -7,15 +7,38 @@
   <link rel="stylesheet" href="/css/splash.css">
   <title>Splash Page</title>
 </head>
-<body>
 
-  <div class="wrapper">
+<body>
+  <div class="animatedBackground">
+    
+  <div class="topnav" id="myTopnav">
+    <a href="/html/index.html">Home</a>
+    <a href="/html/learning.html">Learning Portal</a>
+  </div>
+
+
+
+  <div class="header">
     <h1>Web Development Trivia</h1>
   </div>
 
-<div id = "startButton">
-  <a href="../html/trivia.html">Start</a>
+<div id="randomButton" >
+  <form>
+      <input id="startButton" type="button" value="Generate New Quiz" onClick="random_3()">
+  </form>
+</div>
+<div class="pageText">
+  <h2>
+    Put Your Knowledge To The Test!
+  </h2>
+  <h3>
+    Click The Button To Be Directed To A Practice Quiz
+  </h3>
+  <h4>
+    The Quizes Are Randomly Selected, So You May Not Get The Same Quiz Everytime.
+  </h4>
 </div>
 
+<script src="/js/splash.js"></script>
 </body>
 </html>
