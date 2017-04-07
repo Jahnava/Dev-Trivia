@@ -5,6 +5,7 @@ body, html {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background-color: black;
+  cursor:url("/images/mousecursor.png"), default;
 }
 
 .header {
@@ -16,21 +17,25 @@ body, html {
 }
 
 #startButton {
-  color: white;
+  color: black;
   padding: 10px 0 0 0;
-  background-color: #cbced3;
+  color: #FBCB43;
+  background-color: purple;
   font-size: 30px;
   width: 30%;
   margin: auto;
   padding-bottom: 15px;
-  border: 1px solid grey;
+  border: 1px solid purple;
+  border-style: double;
   text-align: center;
 }
 
-#startButton div:hover {
+#startButton:hover {
   cursor: pointer;
-  color: #FBCB43;
-  background-color: purple;
+  background-color: #cbced3;
+  color: purple;
+
+
 }
 
 
@@ -47,7 +52,7 @@ h1 {
 .topnav {
   background-image: url('https://media.giphy.com/media/3oEdv2jhcfX4JgaXao/giphy.gif');
   background-repeat: repeat x;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */

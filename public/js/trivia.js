@@ -5,6 +5,10 @@ window.onload = function () {
       checker      = document.getElementsByClassName('checker')[0],
       current      = 0,
 
+      // create a random array and use "current" as the counter to go through it
+      myRandomArray = randomizeQuestions(9);
+      randomCurrent = myRandomArray[current];
+
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
@@ -22,7 +26,7 @@ window.onload = function () {
 
         'What is needed at the top of a HTML5 document?' : ['iife', 'script','<!DOCTYPE html>','$jQuery', 2],
 
-        'What is the difference between <ul> and <ol> html tags?' : ['ul underlines and ol creates an overlay', '<ul> unordered list and <ol> ordered list','<ul> unlisted and <ol> overly-listed','<ul> used-listing and <ol> on-point list', 1],
+        'What is the difference between ul and ol html tags?' : ['<ul> underlines and <ol> creates an overlay', '<ul> unordered list and <ol> ordered list','<ul> unlisted and <ol> overly-listed','<ul> used-listing and <ol> on-point list', 1],
 
         'What does CSS stand for?' : ['Cascading Style Sheets', 'Create Style Symmetry ','Caring Stamina Sophistication','Continued State Statue ', 0],
 
@@ -70,9 +74,14 @@ window.onload = function () {
 
       if (current < Object.keys(allQuestions).length -1) {
         current += 1;
+        randomCurrent = myRandomArray[current];
 
-        loadQuestion(current);
-        loadAnswers(current);
+        // loadQuestion(current);
+        // loadAnswers(current);
+
+                loadQuestion(randomCurrent);
+                loadAnswers(randomCurrent);
+
       } else {
         questionArea.innerHTML = 'Done';
         answerArea.innerHTML = '';
@@ -100,9 +109,13 @@ window.onload = function () {
   }
 
 
-  // loads quiz on pg first
-  loadQuestion(current);
-  loadAnswers(current);
+  // // loads quiz on pg first
+  // loadQuestion(current);
+  // loadAnswers(current);
+
+
+  loadQuestion(randomCurrent);
+  loadAnswers(randomCurrent);
 
 };
 
@@ -114,4 +127,25 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+
+
+// builds an array of given size, and then uses shuffle to randomize it
+function randomizeQuestions(size){
+  for (var a=[],i=0;i<size;++i) a[i]=i;
+
+  a = shuffle(a);
+  return a;
+}
+
+// function to shuffle an array
+function shuffle(array) {
+  var tmp, current, top = array.length;
+  if(top) while(--top) {
+    current = Math.floor(Math.random() * (top + 1));
+    tmp = array[current];
+    array[current] = array[top];
+    array[top] = tmp;
+  }
+  return array;
 }

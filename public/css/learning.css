@@ -2,6 +2,7 @@ html {
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-image:url('/images/coding.jpg');
   margin: 0 auto;
+  cursor:url("/images/mousecursor.png"), default;
 }
 
 .topView {
@@ -177,6 +178,7 @@ a:before {
   li {
     background-color: black;
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
+    border-radius:
   }
 
   a {
@@ -198,6 +200,6 @@ a:before {
     margin-top: 10px;
   }
 
-  #quoteDisplay {
-
+  button:hover {
+    cursor: pointer;
   }
