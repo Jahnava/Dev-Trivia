@@ -1,15 +1,19 @@
-html, body {
+body {
   margin: 0;
-  background-color: black;
+  background-image: url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif');
+  background-repeat:round;
+  height: 5px;
+
 }
 
 .animatedBackground {
-  background: gray url(http://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
-  height: 100px;
-  width: 100%;
-  margin: 0;
+    -webkit-animation: slide 20s linear infinite;
+  background: gray url('http://subtlepatterns.com/patterns/geometry2.png') repeat 0 0;
+  height: 700px;
+  width: 90%;
+  margin: auto;
   text-align: center;
-  -webkit-animation: slide 20s linear infinite;
+
 
 }
 
@@ -17,7 +21,71 @@ html, body {
   font-family: sans-serif;
 }
 
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
+/*sliders in navbar*/
+
+header{
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.slidingdoors div{
+  font-family: 'Verdana';
+  font-weight: bold;
+  overflow: hidden;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  transition: border .7s ease;
+  border-radius: 3px;
+  box-shadow:
+    0 0 10px #000,
+    0 0 0 5px #fff;
+}
+.slidetop{
+  background-image:url('') right;
+  border-top: solid 100px #ccc;
+}
+
+.slidetop:hover{
+  border: solid 0px;
+}
+
+.slidebottom{
+  background-image:url('') right;
+  border-bottom: solid 100px #ccc;
+}
+
+.slidebottom:hover{
+  border: solid 0px;
+}
+
+.slideleft{
+background-image:url('') bottom right;
+  border-left: solid 200px #ccc;
+}
+
+.slideleft:hover{
+  border: solid 0px;
+}
+
+.slideright{
+  background-image:url('') right;
+  border-right: solid 200px #ccc;
+}
+
+.slideright:hover{
+  border: solid 0px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-family: "Courier";
+    text-shadow: 2px 2px 3px #000;
+    font-size: 40px;
 }
