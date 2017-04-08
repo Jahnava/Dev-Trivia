@@ -23,7 +23,9 @@ var quote=[
 
   'Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.   —Harriet Tubman.',
 
-  'Develop a passion for learning. If you do, you will never cease to grow. —Anthony J. D Angelo.'
+  'Develop a passion for learning. If you do, you will never cease to grow. —Anthony J. D Angelo.',
+
+  'Change is the end result of all true learning. —Leo Buscaglia'
 
 ];
 
