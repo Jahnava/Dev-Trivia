@@ -6,20 +6,28 @@ body {
   cursor:url("/images/mousecursor.png"), default;
 }
 
-/*p{
+#learningPortal {
 margin: auto;
 text-align: center;
 color: blue;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-decoration: none;
+font-family: "Courier";
 text-shadow: 2px 2px 3px #000;
+font-size: 40px;
 
-}*/
+}
 
 #backgroundimg {
   background: gray url('/images/geometry.png') repeat  0 0;
   height: 700px;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
+
 }
 
 /*sliders in navbar*/
@@ -48,44 +56,27 @@ header{
     0 0 0 5px #fff;
 }
 
-.slidingdoors div {
+a {
   cursor: pointer;
+  padding: 35px 10px 35px 10px;
+  position:inherit;
 }
-
-/*.slidetop{
-  background-image:url('') right;
-  border-top: solid 100px #ccc;
-}*/
 
 .slidetop:hover{
   border: solid 0px;
   background-image: url('/images/giphy.gif');
-}
 
-/*.slidebottom{
-  background-image:url('') right;
-  border-bottom: solid 100px #ccc;
-}*/
+}
 
 .slidebottom:hover{
   background-image: url('/images/giphy.gif');
   border: solid 0px;
 }
 
-/*.slideleft{
-background-image:url('') bottom right;
-  border-left: solid 200px #ccc;
-}*/
-
 .slideleft:hover{
   border: solid 0px;
   background-image: url('/images/giphy.gif');
 }
-
-/*.slideright{
-  background-image:url('') right;
-  border-right: solid 200px #ccc;
-}*/
 
 .slideright:hover{
   background-image: url('/images/giphy.gif');
@@ -98,4 +89,5 @@ a{
     font-family: "Courier";
     text-shadow: 2px 2px 3px #000;
     font-size: 40px;
+    text-align: center;
 }

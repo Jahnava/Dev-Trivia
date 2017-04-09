@@ -31,7 +31,7 @@ var quote=[
 
 function newQuote(){
  var randomNumber = Math.floor(Math.random()*(quote.length));
- document.getElementById('quoteDisplay').innerHTML='<br><h4>'+ quote[randomNumber] + '<br></h4>';
+ document.getElementById('quoteDisplay').innerHTML='<h4><br>'+ quote[randomNumber] + '<br></h4>';
 }
 
 

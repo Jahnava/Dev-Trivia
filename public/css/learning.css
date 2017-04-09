@@ -5,6 +5,11 @@ html {
   cursor:url("/images/mousecursor.png"), default;
 }
 
+.quote {
+padding-left: 250px;
+padding-right: 250px;
+}
+
 .topView {
     width: 75%;
     height: 100%;
