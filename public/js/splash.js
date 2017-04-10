@@ -7,10 +7,10 @@ function randomlinks(){
    links[3]="/html/trivia4.html"
    links[4]="/html/trivia5.html"
    links[5]="/html/trivia6.html"
-   links[6]="http://www.msnbc.com"
-   links[7]="http://www.cnn.com"
-   links[8]="http://news.bbc.co.uk"
-   links[9]="http://www.news.com.au"
+   links[6]="/html/trivia7.html"
+   links[7]="/html/trivia8.html"
+   links[8]="/html/trivia9.html"
+   links[9]="/html/trivia10.html"
 
    window.location=links[myrandom]
 }

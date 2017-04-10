@@ -4,6 +4,7 @@ html {
   padding:0;
   overflow: hidden;
   cursor:url("/images/mousecursor.png"), default;
+  height:100%;
 }
 
 /* Style the links inside the navigation bar */

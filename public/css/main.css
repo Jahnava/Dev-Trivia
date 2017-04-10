@@ -1,46 +1,55 @@
 body {
-  margin: 0;
-  background-image: url('/images/giphy.gif');
-  background-repeat:round;
-  height: 5px;
+  margin: auto;
+  background-image:url('https://cdn.pixabay.com/photo/2017/03/17/18/03/bokeh-2152298_960_720.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
   cursor:url("/images/mousecursor.png"), default;
 }
 
 #learningPortal {
-margin: auto;
+margin: 0 auto;
 text-align: center;
-color: blue;
+color: #000033;
 position: fixed;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 text-decoration: none;
-font-family: "Courier";
-text-shadow: 2px 2px 3px #000;
+text-shadow: 3px 3px 4px yellow;
 font-size: 40px;
-
 }
 
 #backgroundimg {
-  background: gray url('/images/geometry.png') repeat  0 0;
   height: 700px;
-  width: 90%;
-  margin: 0 auto;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
   text-align: center;
-
+  background-image: url('https://cdn.pixabay.com/photo/2014/08/25/22/53/information-427515_960_720.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  /*display: inline-block;*/
+  /*-webkit-box-shadow: inset 10px 10px 300px 200px rgba(139,166,245,0.53);
+  -moz-box-shadow: inset 10px 10px 300px 200px rgba(139,166,245,0.53);
+  box-shadow: inset 10px 10px 300px 200px rgba(139,166,245,0.53);*/
+  border-radius: 25px;
 }
 
 /*sliders in navbar*/
 header{
-  width: 960px;
-  margin: auto;
+  width: 67%;
+  margin: 0 auto;
   text-align: center;
-  padding: 15px;
   cursor:url("/images/mousecursor.png"), default;
+font-family: 'Raleway', sans-serif;
 }
 
 .slidingdoors div{
-  font-family: 'Verdana';
+  margin: auto;
   font-weight: bold;
   overflow: hidden;
   width: 200px;
@@ -50,10 +59,8 @@ header{
   margin: 15px;
   box-sizing: border-box;
   transition: border .7s ease;
-  border-radius: 3px;
-  box-shadow:
-    0 0 10px #000,
-    0 0 0 5px #fff;
+  border-radius: 25px;
+  padding-top: 15px;
 }
 
 a {
@@ -64,30 +71,57 @@ a {
 
 .slidetop:hover{
   border: solid 0px;
-  background-image: url('/images/giphy.gif');
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/17/18/03/bokeh-2152298_960_720.jpg');
 
 }
 
 .slidebottom:hover{
-  background-image: url('/images/giphy.gif');
-  border: solid 0px;
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/17/18/03/bokeh-2152298_960_720.jpg');
 }
 
 .slideleft:hover{
   border: solid 0px;
-  background-image: url('/images/giphy.gif');
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/17/18/03/bokeh-2152298_960_720.jpg');
 }
 
 .slideright:hover{
-  background-image: url('/images/giphy.gif');
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/17/18/03/bokeh-2152298_960_720.jpg');
   border: solid 0px;
 }
 
 a{
     text-decoration: none;
-    color: blue;
-    font-family: "Courier";
-    text-shadow: 2px 2px 3px #000;
+    color:#000033;
+    text-shadow: 2px 2px 3px yellow;
     font-size: 40px;
     text-align: center;
+}
+
+/*outside border*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  position:fixed;
+  width: 100%;
+  max-width: 500%;
+  border: 5px solid #333;
+  /*border-top: none;*/
+  text-align: center;
+  margin: auto;
+  margin-bottom: -15px;
+}
+
+.section {
+  position: relative;
+  margin-top: -10px;
+  background-color: white;
+  background-image: url('https://cdn.pixabay.com/photo/2016/05/05/00/58/daisies-1373075_960_720.jpg');
+  /*background-repeat: no-repeat;
+  background-position: center;*/
+  display: inline-block;
+  background-image: cover;
 }

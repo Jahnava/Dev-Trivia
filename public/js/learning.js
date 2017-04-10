@@ -11,7 +11,7 @@
 
 
 var quote=[
-  'Make it simple. Make it memorable. Make it inviting to look at. Make it fun to read.   —Leo Burnett',
+  'Make it simple. Make it memorable. Make it inviting to look at. Make it fun to read.  —Leo Burnett',
 
   'Inspiration exists, but it has to find us working.   —Pablo Picasso',
 
@@ -23,9 +23,13 @@ var quote=[
 
   'Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.   —Harriet Tubman.',
 
-  'Develop a passion for learning. If you do, you will never cease to grow. —Anthony J. D Angelo.',
+  'Develop a passion for learning. If you do, you will never cease to grow.  —Anthony J. D Angelo.',
 
-  'Change is the end result of all true learning. —Leo Buscaglia'
+  'Change is the end result of all true learning.  —Leo Buscaglia',
+
+  'Always do your best. What you plant now, you will harvest later.  —Og Mandino.',
+  
+  'It does not matter how slowly you go as long as you do not stop. —Confucius.'
 
 ];
 
