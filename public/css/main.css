@@ -41,9 +41,11 @@ font-size: 40px;
 
 /*sliders in navbar*/
 header{
-  width: 67%;
-  margin: 0 auto;
-  text-align: center;
+  float: center;
+  display:run-in;
+  margin-left:18%;
+   padding: 0;
+   text-align: center;
   cursor:url("/images/mousecursor.png"), default;
 font-family: 'Raleway', sans-serif;
 }
