@@ -42,7 +42,7 @@ font-size: 40px;
 /*sliders in navbar*/
 header{
   float: center;
-  display:run-in;
+  display:block;
   margin-left:18%;
    padding: 0;
    text-align: center;
@@ -72,7 +72,6 @@ a {
 }
 
 .slidetop:hover{
-  border: solid 0px;
   background-image: url('/images/grey.jpg');
     background-size: cover;
 
