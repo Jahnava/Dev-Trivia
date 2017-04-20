@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FlashCards</title>
+    <link rel="stylesheet" href="/css/flashcards.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'rel='stylesheet'>
+  </head>
+<header>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html">Home</a>
+      <a href="./splash.html">Trivia</a>
+      <a href="./learning.html">Explore</a>
+      <a href="./forum.html">Forum</a>
+    </div>
+  </header>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-3">
+        <div class="form-group"><label for="frontData">Front</label><textarea name="" id="frontData" cols="30" rows="4" class="form-control"></textarea></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group"><label for="backData">Back</label><textarea name="" id="backData" cols="30" rows="4" class="form-control"></textarea></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <button class="btn btn-success btn-lg btn-block" id="addCard">Add Card</button>
+      </div>
+    </div>
+    <hr/>
+    <div class="row">
+      <div class="col-xs-12 text-center" id="cardField"></div>
+    </div>
+  </div>
+
+    <script src="/js/flashcards.js" class=""></script>
+  </body>
+</html>
