@@ -38,7 +38,7 @@ var draw = function(e) {
         y: e.clientY || e.targetTouches[0].pageY
     };
     drawer[e.type](coors);
-}
+};
 canvas.addEventListener('mousedown', draw, false);
 canvas.addEventListener('mousemove', draw, false);
 canvas.addEventListener('mouseup', draw, false);
