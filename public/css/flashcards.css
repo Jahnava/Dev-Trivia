@@ -63,6 +63,7 @@
 }
 #f1_container {
   perspective: 1000;
+  margin: 40px;
 }
 #f1_card {
   width: 100%;
@@ -82,7 +83,7 @@
   backface-visibility: hidden;
 }
 .face.front{
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2e/Notecard.jpg');
+  background-image: url('/images/Notecard.jpg');
 
 }
 .face.back {

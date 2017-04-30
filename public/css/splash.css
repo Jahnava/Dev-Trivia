@@ -50,9 +50,10 @@ h1 {
 
 /*nav bar*/
 .topnav {
-  background-image: url('https://media.giphy.com/media/3oEdv2jhcfX4JgaXao/giphy.gif');
+  background-image: url('/images/geometry.gif');
   background-repeat: repeat x;
   overflow: hidden;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -101,7 +102,162 @@ h1 {
   }
 }
 
+/*nav bar2*/
+.topnav2 {
+background-color: blue;
+  background-repeat: repeat x;
+  overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav2 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Change the color of links on hover */
+.topnav2 a:hover {
+    background-color: #cbced3;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens*/
+.topnav2 .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide- hide all links*/
+@media screen and (max-width: 600px) {
+  .topnav2 a:not(:first-child) {display: none;}
+  .topnav2 a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/*  small screens display the links vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav2.responsive {position: relative;}
+  .topnav2.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav2.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 .pageText {
   color: white;
   text-align: center;
 }
+
+/*links*/
+#links {
+  font-family: sans-serif;
+}
+
+ul {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+li {
+  width: 32%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+li,
+a,
+a:after,
+a:before {
+  transition: .3s ease;
+  color:white;
+  font-size: 100%;
+}
+
+#photo-zoom
+  li {
+    background-color: black;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+  }
+  a {
+    padding: 80% 20% 35% 20%;
+  }
+
+#photo-flip
+  li{
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+  }
+
+  a {
+    padding: 10% 10% 85% 10%;
+    text-shadow: 0 0 5px #000, 0 0 20px #000;
+  }
+
+  /*li:nth-child(1) a {
+    background: url('/images/board.jpeg') no-repeat 50% 0/cover transparent;
+    filter: grayscale(100%);
+  }
+  li:nth-child(2) a {
+    background: url('/images/board.jpeg') no-repeat 50% 0/cover transparent;
+    filter: grayscale(100%);
+  }
+  li:nth-child(3) a {
+    background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
+    filter: grayscale(100%);*/
+  /*}*/
+  li:nth-child(1) a:hover {
+    background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+  li:nth-child(2) a:hover {
+    background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+  li:nth-child(3) a:hover {
+    background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+
+  li {
+    background-color: black;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+    margin-top: 20%;
+  }
+
+  a {
+    padding: 42.5% 0;
+  }
+  li {
+    transform: rotate(0);
+  }
+  li:hover {
+    transform: rotate(-5deg);
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
