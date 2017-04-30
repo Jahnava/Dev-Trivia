@@ -245,7 +245,7 @@ a:before {
   li {
     background-color: black;
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
-    margin-top: 20%;
+  margin: 30px;
   }
 
   a {
@@ -260,4 +260,23 @@ a:before {
 
   button:hover {
     cursor: pointer;
+  }
+
+  #boxBackground {
+margin-top: 30px;
+ height: 50%;
+ width: 100%;
+ background-color: white;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+
+ /* bring your own prefixes */
+ transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    font-color: white;
+     font-size: 20px;
+     text-align: center;
   }

@@ -59,7 +59,7 @@
   width: 300px;
   height: 200px;
   z-index: 1;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'cursive'fantasy;
 }
 #f1_container {
   perspective: 1000;
@@ -83,7 +83,7 @@
   backface-visibility: hidden;
 }
 .face.front{
-  background-image: url('/images/Notecard.jpg');
+  background-image: url('/images/card.png');
 
 }
 .face.back {
