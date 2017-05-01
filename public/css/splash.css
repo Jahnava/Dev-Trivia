@@ -217,18 +217,7 @@ a:before {
     text-shadow: 0 0 5px #000, 0 0 20px #000;
   }
 
-  /*li:nth-child(1) a {
-    background: url('/images/board.jpeg') no-repeat 50% 0/cover transparent;
-    filter: grayscale(100%);
-  }
-  li:nth-child(2) a {
-    background: url('/images/board.jpeg') no-repeat 50% 0/cover transparent;
-    filter: grayscale(100%);
-  }
-  li:nth-child(3) a {
-    background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
-    filter: grayscale(100%);*/
-  /*}*/
+
   li:nth-child(1) a:hover {
     background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
     filter: grayscale(0);
@@ -238,6 +227,10 @@ a:before {
     filter: grayscale(0);
   }
   li:nth-child(3) a:hover {
+    background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
+    filter: grayscale(0);
+  }
+  li:nth-child(4) a:hover {
     background: url('/images/geometry.gif') no-repeat 50% 0/cover transparent;
     filter: grayscale(0);
   }
