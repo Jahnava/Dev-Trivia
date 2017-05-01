@@ -11,6 +11,7 @@ height: 100%;
  background-repeat: cover;
  margin-top: 30px;
  overflow-y: scroll;
+ cursor:url("/images/mousecursor.png"), default;
 }
 
 /*nav bar*/
